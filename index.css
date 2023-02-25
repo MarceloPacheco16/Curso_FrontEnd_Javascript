@@ -14,15 +14,7 @@ nav ul{
     background-color:rgb(100, 149, 237);
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    border-radius: 2px;
-}
-
-#contenedor .titulo h2:first-child{
-    padding-top: 0;
-}
-
-#contenedor .titulo:last-child{
-    margin-bottom: 0;
+    border-radius: 5px;
 }
 
 /* ESTILOS GLOBALES */
@@ -59,15 +51,12 @@ nav ul{
     padding-left: 0;
 }
 
-.row{
-    text-align: center;
-}
-
 .titulo .row{
-    display: flex;
+    display: flex; /* .row ya tiene display flex */
     align-items: center;
     justify-content: center;
 }
+
 .titulo .row div{
     padding-left: 20px;
     padding-right: 20px;
@@ -77,6 +66,7 @@ p{
     margin-left: 10px;
     margin-right: 10px;
 }
+
 .display_none{
     display: none;
 }
@@ -114,12 +104,6 @@ nav ul{
     gap: 10px;
 }
 
-nav ul li,
-nav button{
-    display: inline-block;    
-    font-weight: 500;
-}
-
 nav a{
     text-decoration: none;
     color: black;
@@ -127,20 +111,20 @@ nav a{
 
 nav button{
     padding: 4px 8px;
-    border: 2px solid black;
+    border: 2px solid black;/* ? */
     border-radius: 10px;
     background-color: white;
 }
 
 nav button:hover{
     background-color: rgb(178, 255, 255);
+    border: 2px solid rgb(178, 255, 255);
 }
 
 /*PERFIL*/
 
 #perfil h3{
     font-size: 2rem;
-    font-weight: 500;
 }
 
 /* CONTACTO */
@@ -152,20 +136,21 @@ nav button:hover{
     margin-right: 10px;
 }
 
-/* SOBRE MI */
-#sobre_mi p{
-    font-weight: 500;
-}
-
-/* CONTACTO */
 #contacto i{
     color: white;
     font-size: 2rem;
 }
 
+/* SOBRE MI */
+
+#sobre_mi p{
+    font-weight: 500;
+}
+
 /* EDUCACION */
+
 #educacion p:first-of-type{
-    width:fit-content;
+    width:fit-content; /*da un margen left, right y bottom hasta que se ajuste al contenido */
     margin-left: auto;
     margin-right: auto;
     font-weight: 600;
@@ -173,29 +158,31 @@ nav button:hover{
 }
 
 /* OBJETIVO LABORAL */
+
 #objetivo p{
     font-weight: 500;
 }
 
-/* EXPERIENCIAS  y CURSOS */
+/* EXPERIENCIAS y CURSOS */
 
-#experiencias .btn,
-#cursos .btn{
+.titulo .btn{
     margin-bottom: 10px;
     font-weight: 500;
     border: 2px solid black;
     background-color: white;
 }
 
-#experiencias .btn:hover,
-#cursos .btn:hover{
+.titulo .btn:hover{
     background-color: rgb(178, 255, 255);
+    border: 2px solid rgb(178, 255, 255);
 }
+
 /*HABILIDADES*/
 
 #habilidades ul{
     gap:10px;
 }
+
 #habilidades .badge{
     font-size: 1rem;
 }

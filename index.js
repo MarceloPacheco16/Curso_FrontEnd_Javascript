@@ -32,8 +32,11 @@ menu.addEventListener("click", function(){
 });
 
 function ocultar(){
+
     for(i=0; i<7; i++){            
         items[i].classList.add("display_none");
     }
+    
     menu.click();
+    
 };
