@@ -49,6 +49,7 @@ img{
     border-radius: 30%;
     border: 4px solid rgb(255, 248, 248);
     box-shadow: inset 10px 10px 0 0 rgb(255, 248, 248);
+    object-fit: cover; /* posiciona mejor la imagen*/
 }
 
 .titulo ul,
