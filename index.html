@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!--Font Poppins 200;300;400;500;600;700;800;900-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="contenedor">
+
+        <nav>
+            <ul class="d-flex justify-content-evenly align-items-center flex-wrap">
+
+                <li><button type="menu" id="menu"><i class="bi bi-list"></i></button></li>
+                <li class="item display_none"><button type="button" onclick="ocultar()"><a href="#perfil">Perfil</a></button></li>
+                <li class="item display_none"><button type="button" onclick="ocultar()"><a href="#contacto">Contacto</a></button></li>
+                <li class="item display_none"><button type="button" onclick="ocultar()"><a href="#sobre_mi">Sobre Mi</a></button></li>
+                <li class="item display_none"><button type="button" onclick="ocultar()"><a href="#educacion">Educación</a></button></li>
+                <li class="item display_none"><button type="button" onclick="ocultar()"><a href="#objetivo">Objetivo</a></button></li>
+                <li class="item display_none"><button type="button" onclick="ocultar()"><a href="#experiencias">Experiencias</a></button></li>
+                <li class="item display_none"><button type="button" onclick="ocultar()"><a href="#cursos">Cursos</a></button></li>
+                <li class="item display_none"><button type="button" onclick="ocultar()"><a href="#habilidades">Habilidades</a></button></li>
+
+            </ul>
+        </nav>
+
+        <div id="perfil" class="titulo">
+            
+            <h2>PERFIL</h2>
+            <img src="imagenes/Foto CV.jpg">
+            <h3>Marcelo Pacheco</h3>
+            <h4>Estudiante Tec. Sup. en Analista en Sistemas</h4>
+        </div>
+
+        <div id="contacto" class="titulo">
+            <h2>CONTACTO</h2>
+
+            <ul>
+                <li><i class="bi bi-geo-alt-fill"></i> POMPEYA, CABA</li>
+                <li><i class="bi bi-phone-fill"></i> 114576-5482</li>
+                <li><i class="bi bi-envelope-at-fill"></i> marcheco@gmail.com</li>
+                <li><i class="bi bi-linkedin"></i> linkedin.com/in/marcelo-pacheco</li>
+            </ul>
+        </div>
+
+        <div id="sobre_mi" class="titulo">
+            <h2>SOBRE MI</h2>
+            <p>Yo soy  Marcelo, una persona que le gusta trabajar en equipo, al cual es empático con los que lo redoan
+                 y optimista por que suelo ver lado bueno de las cosas. Mis intereses van hacia la programación,
+                 la mejora de mi ingles, y busco mantenerme en forma física con ejercicios, y mentalmente con mis estudios.
+            </p>
+        </div>
+
+        <div id="educacion" class="conteiner titulo">
+            <h2>EDUCACIÓN</h2>
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h3>IFTS Nº11</h3>
+                    <p>Analista en Sistemas</p>
+                    <p><strong>2022 en Curso</strong></p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <h3>Esc. Tec. Nº7</h3>
+                    <p>Tecnico en Computación</p>
+                    <p><strong>Finalizado en 2018</strong></p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="objetivo" class="titulo">
+            <h2>OBJETIVO LABORAL</h2>
+            <p>Mi objetivo en una empresa es ir adquiriendo nuevos conocimientos, para poder aplicarlos, 
+                y mejorar en las áreas que yo me estoy desarrollando. Así poder crear proyectos propios, con gente 
+                que también comparta esos objetivos.
+            </p>
+        </div>
+
+        <div id="experiencias" class="conteiner titulo">            
+            <h2>EXPERIENCIAS</h2>
+
+            <div class="row">
+                <div class="col-12 col-md-6 ">
+                    <h3>Diseño Grafico</h3>
+                    <p><strong>03/2019 - 12/2019</strong></p>
+                    <p class="descripcion display_none">Creación de Logos, Banners y Posters con el uso de Photoshop.</p>
+                    <button type="button" class="btn" onclick="descripcion(0)">Mostrar</button>
+                </div>
+
+                <div class="col-12 col-md-6 ">
+                    <h3>Pasantia</h3>
+                    <p><strong>09/2018 - 11/2018</strong></p>
+                    <p class="descripcion display_none">Inventario de los equipos de computación y reparacion de PC's.</p>
+                    <button type="button" class="btn" onclick="descripcion(1)">Mostrar</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="cursos" class="conteiner titulo">            
+            <h2>CURSOS</h2>
+
+            <div class="row">
+                <div class="col-12 col-md-6 ">
+                    <h3>Curso de FrontEnd Javascript</h3>
+                    <p><strong>12/2022 - 03/2023</strong></p>
+                    <p class="descripcion display_none">Repaso de los conocimientos basicos de HTML y CSS, luego aprendi como usar los breakpoints, 
+                        media queries, manejar BOOTSTRAP, y crear repositorio en Git Hub. Tambien con JavaScript aprendiendo a usar Eventos en el HTML, y 
+                        la manera en la que encarar un proyecto web, y la lógica de negocio en paginas web.
+                    </p>
+                    <button type="button" class="btn" onclick="descripcion(2)">Mostrar</button>
+                </div>
+
+                <div class="col-12 col-md-6 ">
+                    <h3>PROGRAMA EMPUJAR</h3>
+                    <p><strong>09/2022 - 12/2022</strong></p>
+                    <p class="descripcion display_none">Desarrollo de competencias laborales, habilidades socio emocionales y autoconocimiento.
+                        Elaboración de un proyecto empresarial en equipo con el asesoramiento de profesionales 
+                        de empresas en el área de Administración en el rol de Líder.
+                    </p>
+                    <button type="button" class="btn" onclick="descripcion(3)">Mostrar</button>
+                </div>
+
+                <div class="col-12 col-md-6 ">
+                    <h3>Desarrollador de Web Front-End Jr</h3>
+                    <p><strong>04/2017 - 07/2017</strong></p>
+                    <p class="descripcion display_none">Conocí HTML y CSS, realizando una pagina personal con nuestro recorrido. Y con JAVASCRIPT conocimientos básicos.</p>
+                    <button type="button" class="btn" onclick="descripcion(4)">Mostrar</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="habilidades" class="titulo">
+            <h2>HABILIDADES</h2>
+
+            <ul class="d-flex flex-wrap justify-content-evenly">
+                <li><span class="badge text-bg-primary">Trabajo en Equipo</span></li>
+                <li><span class="badge text-bg-primary">HTML</span></li>
+                <li><span class="badge text-bg-primary">CSS</span></li>
+                <li><span class="badge text-bg-primary">JavaScript</span></li>
+            </ul>
+        </div>
+
+    </div>
+    
+    <script type="text/JavaScript" src="index.js"></script>
+
+</body>
+</html>
